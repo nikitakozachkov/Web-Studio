@@ -442,6 +442,9 @@ body.modal-open {
           justify-content: center;
   background-color: transparent;
   border: 0px;
+  color: var(--title-text-color);
+  -webkit-transform: color var(--animation-duration) var(--animation-direction);
+          transform: color var(--animation-duration) var(--animation-direction);
 }
 .header-nav__menu-button.is-open .menu-container {
   display: block;
@@ -451,15 +454,13 @@ body.modal-open {
     display: none;
   }
 }
+.header-nav__menu-button:hover, .header-nav__menu-button:focus {
+  color: var(--accent-color);
+}
 
 .header-nav__icon {
   width: 40px;
   height: 40px;
-  -webkit-transform: color var(--animation-duration) var(--animation-direction);
-          transform: color var(--animation-duration) var(--animation-direction);
-}
-.header-nav__icon:hover, .header-nav__icon:focus {
-  color: var(--accent-color);
 }
 
 .menu-container {

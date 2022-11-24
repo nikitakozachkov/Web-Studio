@@ -73,7 +73,7 @@
   justify-content: center;
   background-color: transparent;
   border: 0px;
-  fill: var( --title-text-color);
+  color: var( --title-text-color);
 
   &.is-open .menu-container {
     display: block;
@@ -81,6 +81,13 @@
 
   @media screen and (min-width: 768px) {
     display: none;
+  }
+
+  transform: color var(--animation-duration) var(--animation-direction);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
   }
 }
 
