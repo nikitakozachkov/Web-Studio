@@ -73,6 +73,7 @@
   justify-content: center;
   background-color: transparent;
   border: 0px;
+  color: var( --title-text-color);
 
   &.is-open .menu-container {
     display: block;
@@ -86,6 +87,7 @@
 .header-nav__icon {
   width: 40px;
   height: 40px;
+  color: var();
 
   transform: color var(--animation-duration) var(--animation-direction);
 
