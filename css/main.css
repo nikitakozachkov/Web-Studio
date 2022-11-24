@@ -443,8 +443,6 @@ body.modal-open {
   background-color: transparent;
   border: 0px;
   color: var(--title-text-color);
-  -webkit-transform: color var(--animation-duration) var(--animation-direction);
-          transform: color var(--animation-duration) var(--animation-direction);
 }
 .header-nav__menu-button.is-open .menu-container {
   display: block;
@@ -453,9 +451,6 @@ body.modal-open {
   .header-nav__menu-button {
     display: none;
   }
-}
-.header-nav__menu-button:hover, .header-nav__menu-button:focus {
-  color: var(--accent-color);
 }
 
 .header-nav__icon {
@@ -474,9 +469,6 @@ body.modal-open {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   position: fixed;
   top: 0;
   left: 0;
