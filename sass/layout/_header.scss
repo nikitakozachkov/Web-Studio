@@ -84,11 +84,6 @@
   }
 
   transform: color var(--animation-duration) var(--animation-direction);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
 }
 
 .header-nav__icon {
