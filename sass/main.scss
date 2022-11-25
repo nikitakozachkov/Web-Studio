@@ -37,6 +37,7 @@
     url("../images/hero-img__mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   background-color: var(--secondary-background-color);
   padding: 0;
 
@@ -47,7 +48,7 @@
     text-transform: uppercase;
     margin: 0 auto;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
       max-width: 360px;
       font-size: 26px;
     }
@@ -60,26 +61,56 @@
   }
 
   @media screen and (min-resolution: 2dppx) {
-    background-image: url('../images/hero-img__mobile@2x.jpg')
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ), 
+
+    url('../images/hero-img__mobile@2x.jpg')
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url('../images/hero-img__tablet');
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ), 
+    
+    url('../images/hero-img__tablet.jpg');
 
     @media screen and (min-resolution: 2dppx) {
-      background-image: url('../images/hero-img__tablet@2x.jpg')
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), 
+
+      url('../images/hero-img__tablet@2x.jpg')
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    background-image: url('../images/hero-img__desktop');
+  @media screen and (min-width: 1024px) {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ), 
+
+    url('../images/hero-img__desktop.jpg');
 
     @media screen and (min-resolution: 2dppx) {
-      background-image: url('../images/hero-img__desktop@2x.jpg')
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), 
+
+      url('../images/hero-img__desktop@2x.jpg')
     }
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     height: 400px;
   }
 }
