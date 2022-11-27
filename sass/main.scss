@@ -378,16 +378,12 @@
 }
 
 .work-examples-filter {
-  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 8px;
 }
 
 .work-examples-filter__item {
-  margin-right: 8px;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .work-examples-filter__button {
