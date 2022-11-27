@@ -17,11 +17,13 @@
 
 .modal {
   display: flex;
+  justify-content: center;
   align-items: center;
   background-color: #fff;
   z-index: 999;
   text-align: center;
   padding: 40px;
+  max-width: 528px;
   width: 100%;
   position: absolute;
   top: 50%;
@@ -54,10 +56,6 @@
 
   @media screen and (max-width: 768px) {
     max-width: 450px;
-  }
-
-  @media screen and (min-width: 1170px) {
-    max-width: 528px;
   }
 }
 
